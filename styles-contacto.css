@@ -1,0 +1,116 @@
+/* Estilos básicos */
+
+@font-face {
+    font-family: Heebo;
+    src: url('Heebo-Regular.ttf');
+}
+
+body {
+    font-family: Heebo;
+    background-color: #F1F9EC;
+    color: #074a29;
+    margin: 0;
+    padding-right: 0em;
+}
+
+/* Barra de navegación fija */ 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #afdc97;
+    color: #074a29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000; /* Asegura que esté sobre el contenido */
+}
+
+nav h1 {
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Estilos para el botón con ícono */
+nav button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav button .back-icon {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px;
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+nav button i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilos del contenido principal */
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+}
+
+.box {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 2000px;
+    background: #F1F9EC;
+    margin:auto;
+    margin: 5em 1em 1em 1em;
+    box-shadow: 0px 0px 15px 0px #0007;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+}
+
+h2 {
+    font-size: 24px;
+    color: #074a29; /* Color del título */
+    font-family: Heebo;
+}
+
+p{
+    text-align: left;
+    margin-left: 1em;
+    font-family: Heebo;
+}
+
+.map-container {
+    overflow: hidden;
+    display: inline-block;
+    min-width: 300px;
+    max-width: 2000px;
+    background: #F1F9EC;
+    margin:auto;
+    margin: 1em 1em 1em 1em;
+    box-shadow: 0px 0px 15px 0px #0007;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+}
+
+section {
+    padding: 5px;
+}
+
+a {
+    color: #69f;
+    text-decoration: none;
+}

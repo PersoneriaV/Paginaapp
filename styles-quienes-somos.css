@@ -1,0 +1,99 @@
+/* Estilos básicos */
+
+@font-face {
+    font-family: Heebo;
+    src: url('Heebo-Regular.ttf');
+}
+
+body {
+    font-family: Heebo;
+    background-color: #F1F9EC;
+    color: #074a29;
+    margin: 0;
+    padding-right: 0em;
+}
+
+/* Barra de navegación fija */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #afdc97;
+    color: #074a29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000; /* Asegura que esté sobre el contenido */
+}
+
+nav h1 {
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Estilos para el botón con ícono */
+nav button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav button .back-icon {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px;
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+nav button i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilos del contenido principal */
+.team-content {
+    margin-top: 4em;
+    padding: 1em;
+    background-color: #F1F9EC;
+}
+
+/* Estilos de la cuadrícula */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    background-color: #F1F9EC;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px #0007;
+    text-align: center;
+    padding: 15px;
+    font-family: Heebo;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #074a29;
+    font-family: Heebo;
+    margin: 10px 0 5px;
+}
+
+p {
+    font-size: 14px;
+    color: #074a29;
+}

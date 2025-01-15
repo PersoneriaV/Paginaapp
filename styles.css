@@ -1,0 +1,144 @@
+/* Estilos generales */
+
+@font-face {
+    font-family: Heebo;
+    src: url('Heebo-Regular.ttf');
+}
+
+@font-face {
+    font-family: Libre-Bold;
+    src: url('LibreBaskerville-Bold.ttf');
+}
+
+@font-face {
+    font-family: Libre-Regular;
+    src: url('LibreBaskerville-Regular.ttf');
+}
+
+body {
+    font-family: Heebo;
+    background-color: #F1F9EC;
+    color: #074a29;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido en pantallas grandes */
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.main-container {
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+}
+
+/* Encabezado */
+header {
+    background-color: #afdc97;
+    width: 100%;
+    max-height: 100px; /* Limita el ancho del encabezado */
+    display: flex;
+    align-items: center;
+    padding: 1% 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+    max-height: 100px;
+    max-width: 100px;
+    padding: 10px 3px 10px 10px;
+}
+
+.texto-encabezado {
+    flex-grow: 1;
+    padding-left: 2%;
+    font-family: Libre-Bold;
+    text-align: center;
+    color: #074a29;
+}
+
+.texto-encabezado .linea1 {
+    font-size: 1.5em;
+}
+
+.texto-encabezado .linea2 {
+    font-size: 1.2em;
+}
+
+.texto-encabezado .linea3 {
+    font-size: 0.8em;
+    font-family: Libre-Regular;
+}
+
+/* Contenido de imágenes */
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+    padding: 30% 5% 10% 5%;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px; /* Limita el ancho del contenedor de imágenes */
+}
+
+.imagen-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.contenido img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.467);
+}
+
+.contenido img:hover {
+    transform: scale(1.05);
+}
+
+.imagen-item p {
+    margin-top: 5%;
+    font-size: 1em;
+    color: #074a29;
+}
+
+.imagen-1 p {
+    margin-top: 5%;
+    font-size: 1em;
+    color: #074a29;
+    text-align: center;
+}
+
+.imagen-1 img {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.467);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-height: 160px;
+}
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #afdc97;
+    color: #074a29;
+    text-align: center;
+    padding: 0%;
+    font-size: 0.8em;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+}
